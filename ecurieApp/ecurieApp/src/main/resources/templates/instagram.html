@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/insta}" method="post" >
+
+
+    UPLOAD IMAGE
+    <br/><input type="file" id="cheminImage" name="cheminImage" required/>
+    <br/> <br/>
+
+
+    <br/><br/> <br/>
+    <p>
+        <input type="submit" class="btn btn-primary js-scroll-trigger" value="Upload"/>
+    </p>
+
+</form>
+
+
+<div class=" alert-success"  th:if="${error}">
+    <p th:text="${error}"></p>
+</div>
+
+<div class=" alert-success"  th:if="${image}">
+    <img src="data:image/jpeg;base64," th:text="${image}" />
+</div>
+
+</body>
+</html>

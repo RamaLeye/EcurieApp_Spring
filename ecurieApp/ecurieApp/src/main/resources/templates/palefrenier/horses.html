@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <title>Chevaux</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/business-casual.min.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<a href="/menu">
+    <button class="btn btn-primary" style="  margin-left: 50px;" >  < Retour menu </button></a>
+
+<div class="container">
+
+    <div id="sectionChevaux"  class="sectionManagement " >
+         <br>
+
+
+         <button class="btn btn-primary"  data-title="addFiche" data-toggle="modal"
+                 data-target="#addFiche"style="  margin-left: 50px;" >  Ajouter une fiche</button>
+
+         <br>
+
+         <div class="col-sm-12 col-md-12" id="contentChevaux" style="padding:30px;">
+
+             <div class=" alert-success"  th:if="${ajout}">
+                 <p th:text="${ajout}"></p>
+             </div>
+
+             <table id="tableChevaux" class="table table-hover">
+                 <thead>
+                 <tr>
+                     <td> <STRONG> Identifiant </STRONG></td>
+                     <td> <strong> Nom du cheval </strong></td>
+                     <td><strong>  Operations fiche </strong></td>
+                     <td></td>
+                     <td></td>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <th:block th:each="horse : ${horses}">
+                     <tr style="width:100%">
+                         <td style="width: 25%; text-align: center" th:text="${horse.nom}"></td>
+                         <td><p data-placement="top" data-toggle="tooltip" title="Details"><button class="btn btn-primary  "  th:attr="data-target='./consult/'+${horse.id}"  data-toggle="modal" data-target="#details" >Consulter</button></p></td>
+                         <td><p data-placement="top" data-toggle="tooltip" title="Modifier"><button class="btn btn-primary  " th:attr="data-target='./edit/'+${horse.id}"   data-toggle="modal" data-target="#edit" >Modifier</button></p></td>
+                     </tr>
+                 </th:block>
+
+                 </tbody>
+             </table>
+         </div>
+     </div>
+
+</div>
+
+
+<!-- Modal add horse -->
+<div class="modal fade" id="addFiche" tabindex="-1" role="dialog" aria-labelledby="add" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove"
+                                                                                                  aria-hidden="true"></span>
+                </button>
+                <h4 class="modal-title custom_align" id="HeadingFiche">Ajouter une fiche cheval </h4>
+            </div>
+
+            <form id="addForm" action="/palefrenier/addHorse" method="post">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        Nom : <input class="form-control" name="name" required type="text">
+                    </div>
+
+                    <div class="form-group">
+                        Race : <input class="form-control" name="race" required type="text">
+                    </div>
+
+                    <div class="form-group">
+                        Date Naissance :<input class="form-control" name="birthDate" required type="date" >
+                    </div>
+
+                    <div class="form-group">
+                        Sexe : <select name="gender">
+                        <option value="male"> Male </option>
+                        <option value="female"> Female </option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                        Poids : <input class="form-control" name="weight" required type="number" step="0.01">
+                    </div>
+
+
+                    <div class="form-group">
+                        Dernière vaccination :<input class="form-control" name="vaccinationDate" required type="date"  >
+                    </div>
+
+                </div>
+
+                <div class="modal-footer ">
+                    <button type="submit" class="btn  btn-lg" style="width: 100%;"><span
+                            class="fa fa-check"></span> Ajouter
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal consult horse -->
+<div class="modal fade" id="consultHorse" tabindex="-1" role="dialog" aria-labelledby="add" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove"
+                                                                                                  aria-hidden="true"></span>
+                </button>
+                <h4 class="modal-title custom_align" id="HeadingAdd">Consulter un cheval </h4>
+            </div>
+
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        Nom : <input class="form-control" name="name" required type="text">
+                    </div>
+
+                    <div class="form-group">
+                        Race : <input class="form-control" name="race" required type="text">
+                    </div>
+
+                    <div class="form-group">
+                        Date Naissance :<input class="form-control" name="birthDate" required type="date" >
+                    </div>
+
+                    <div class="form-group">
+                        Sexe : <select name="gender">
+                        <option value="male"> Male </option>
+                        <option value="female"> Female </option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                        Poids : <input class="form-control" name="weight" required type="number" step="0.01">
+                    </div>
+
+
+                    <div class="form-group">
+                        Dernière vaccination :<input class="form-control" name="vaccinationDate" required type="date"  >
+                    </div>
+
+                </div>
+
+                <div class="modal-footer ">
+                    <button type="submit" class="btn  btn-lg" style="width: 100%;"><span
+                            class="fa fa-check"></span> Ajouter
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+
+
+
+
+
+<footer class="footer text-faded text-center py-5">
+    <div class="container">
+        <p class="m-0 small">Copyright &copy; LEYE Architectures d'entreprises, ETE 2020</p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+</body>
+
+</html>
+

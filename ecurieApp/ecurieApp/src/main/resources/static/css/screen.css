@@ -1,0 +1,871 @@
+body{
+	width:100%;
+	min-width:1024px;
+	text-align:center;
+	margin:auto;
+        background-image: url("/tp_javaee/resources/img/background_simple.jpg");
+        background-repeat:no-repeat;
+        background-position:bottom;
+        grid-template-columns: 200px 400px;
+        display: grid;
+        background-size: cover;
+  	
+}
+header{
+	display:inline-block;
+	width:100%;
+	height:70px;
+	
+	margin:0 auto;
+	text-align: center;
+}
+center{
+	display:inline-block;
+	width:100%;
+	text-align: center;
+
+	
+	
+}
+
+footer{
+	
+
+	display:inline-block;
+	position:fixed;
+	left:0px;
+	bottom: 0px;
+	width:100%;
+	height:50px;
+	text-align: center;
+	margin-bottom: 10vh;
+	
+
+	
+}
+ul{
+	background-color:#eee;
+	cursor:pointer;
+}
+li{
+	padding:12px;
+}
+menu a{
+	display:block;
+	float:left;
+	width:140px;
+	height:50px;
+	margin:4px;
+	font-size:1.2em;
+	color:white;
+	font-family: 'calibri';
+	text-decoration:none;
+}
+menu a:hover{
+	
+	color:burlywood;
+	
+}
+
+
+
+h1{
+	color: white;
+	font-family: cursive;
+}
+
+div#field{
+	
+	display:inline-block;
+	margin-top:0vh;
+	background:white;
+  	width:80%;
+	height:35px;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;
+
+}
+form#form {
+	display:inline-block;
+	margin-top:20vh;
+	width:10%;
+	height:350px;
+	
+	padding:10px;
+	text-align:center;
+	border:solid 1px black;
+	border-radius:18px;
+	background:linear-gradient(azure,#b9c9fe);
+	
+}
+
+form#form1 {
+	background:linear-gradient(azure,#b9c9fe);
+	margin-top:11vh;
+        grid-column: 1;
+}
+
+form#form2 {
+	display:inline-block;
+	margin-top:12vh;
+	width:15%;
+	height:450px;
+	
+	
+	padding:10px;
+	text-align:right;
+	border:solid 1px black;
+	border-radius:18px;
+	background:linear-gradient(azure,#b9c9fe);
+}
+
+
+form#form3 {
+	display:inline-block;
+	margin-top:7vh;
+	width:20%;
+	height:680px;
+	
+	
+	padding:10px;
+	text-align:right;
+	border:solid 1px black;
+	border-radius:18px;
+	background:linear-gradient(azure,#b9c9fe);
+}
+
+form#form4 {
+	display:inline-block;
+	margin-top:3vh;
+	width:100%;
+	height:880px;
+	
+	
+	padding:10px;
+	text-align:right;
+	border:solid 1px black;
+	border-radius:18px;
+	background:linear-gradient(azure,#b9c9fe);
+}
+form#form5 {
+	display:inline-block;
+	margin-top:3vh;
+	width:100%;
+	height:880px;
+	
+	
+	padding:10px;
+	text-align:right;
+	border:solid 1px black;
+	border-radius:18px;
+	background-color:azure;
+}
+
+#mail{
+	text-align:center; 
+	
+}
+
+div#ou{
+     height: 400px;
+     width: 800px;
+     background: red;
+     line-height: 400px;
+     text-align: center;
+	font-size: 2.5em;
+}
+
+div.message{
+	display:inline-block;
+	margin-top:12vh;
+	width:55%;
+	height:150px;
+	padding:10px;
+	text-align:right;
+	border:solid 1px black;
+	border-radius:18px;
+	background-color:black;
+	
+}
+
+.inscriptionRed{
+	
+	display:inline-block;
+	margin-top:21vh;
+	background-color:whitesmoke;
+  	width:45%;
+  		
+	font-size:9px;
+	text-align: right;
+        border-radius: 7px;
+	border:solid 0.5px black;	
+}
+
+div#modifyPlanning{
+	
+	display:inline-block;
+	margin-top:21vh;
+	background-color:azure;
+  	width:15%;
+  	padding:16px;	
+	text-align: right;
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+
+div#modifyPlanning3{
+		display:inline-block;
+	margin-top: 20vh;
+	margin-right: 60vh;
+	background-color:azure;
+  	width:15%;
+	height: 380px;
+  	padding:26px;	
+	
+	text-align: left;
+	border-radius:28px;
+	border:solid 1px black;	
+
+}
+div#PiecesJointes{
+	display:inline-block;
+	margin-bottom: 60vh;
+	margin-left: 90vh;
+	background:linear-gradient(azure,#b9c9fe);
+  	width:15%;
+		height:280px;
+  	padding:12px;	
+	text-align: left;
+	border-radius:28px;
+	border:solid 1px black;	
+
+}
+
+div#depConsult{
+	display:inline-block;
+margin-top:11vh;
+
+	background:linear-gradient(azure,#b9c9fe);
+  	width:55%;
+		height:680px;
+  	padding:12px;	
+	text-align: left;
+	border-radius:28px;
+	border:solid 1px black;	
+
+}
+
+div#modifyConges{
+	
+	display:inline-block;
+	margin-top:11vh;
+	background-color:azure;
+  	width:20%;
+  	padding:16px;	
+	text-align: right;
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+div#refusConges{
+	
+	display:inline-block;
+	margin-top:11vh;
+	background-color:azure;
+  	width:20%;
+  	padding:16px;	
+	text-align: center;
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+
+div#modifyPlanning2{
+	
+	display:inline-block;
+	margin-top:21vh;
+	background:linear-gradient(azure,#b9c9fe);
+  	width:32%;
+	height:160px;
+  	padding:16px;	
+	text-align: center;
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+div#userPlanning{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:#EDEDED;
+  	width:95%;
+	
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+div#userPlanning2{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:white;
+  	width:60%;
+	
+  	padding:16px;	
+	
+	border:solid 1px black;	
+}
+
+div#userPlanning3{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:white;
+  	width:15%;
+	
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+
+
+
+div#first{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	background:white;
+  	width:23%;
+	float :left;
+  	padding:16px;	
+	background:linear-gradient(azure,#b9c9fe);
+	
+
+}
+
+div#second{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	margin-left: 2vh;
+	background:white;
+  	width:30%;
+	float :left;
+  	padding:16px;	
+	background:linear-gradient(azure,#b9c9fe);
+	
+	
+}
+
+div#modif{
+	
+	display:inline-block;
+	
+	
+  	width:20%;
+	height : 55px;
+	float :center;
+ 
+	background:linear-gradient(azure,#b9c9fe);
+	
+	
+}
+
+div#modif2{
+	
+	display:inline-block;
+	
+	
+  	width:27%;
+	height : 160px;
+	float:right;
+  	text-align: right;
+	
+	
+	
+}
+div#third{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	margin-left: 2vh;
+	background:white;
+  	width:25%;
+	float :left;
+  	padding:16px;
+	background:linear-gradient(azure,#b9c9fe);
+	
+	
+}
+
+div#fourth{
+	
+	display:inline-block;
+	margin-top: 22vh;
+	height: 300px;
+	background:white;
+  	width:11%;
+	float :center;
+  	padding:16px;
+	background:white;
+	
+	
+}
+
+
+div#fifth{
+	
+	display:inline-block;
+	
+	background:white;
+  	width:25%;
+	float :left;
+  	padding:16px;	
+	background:azure;
+	text-align: right;
+	
+
+}
+
+div#fifth3{
+	
+	display:inline-block;
+	
+	background:white;
+  	width:40%;
+	float :left;
+  	padding:16px;	
+	background:azure;
+	text-align: right;
+	
+
+}
+
+
+div#fifth1{
+	
+	display:inline-block;
+	
+	background:white;
+  	width:25%;
+	float :left;
+  	padding:16px;	
+	background:azure;
+	text-align: left;
+	
+
+}
+
+
+div#left{
+	
+	display:inline-block;
+	
+	background:white;
+  	width:13%;
+	float :left;
+  	padding:16px;	
+	background:azure;
+	text-align: right;
+	
+
+}
+div#divUserPlanning{
+	
+	display:inline-block;
+	margin-top: 15vh;
+	background:white;
+  	width:90%;
+	
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+div#congesConsult{
+	
+	display:inline-block;
+	margin-top: 21vh;
+	background:white;
+  	width:95%;
+  	padding:10px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+
+div#consult{
+	
+	display:inline-block;
+	margin-top: 21vh;
+	background:linear-gradient(azure,#b9c9fe);
+  	width:90%;
+	
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+div#salaries{
+	
+	display:inline-block;
+	margin-top: 31vh;
+	background:azure;
+  	width:20%;
+	margin-left : 25vh;
+	float:left;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+div#ajoutSalaries{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:azure;
+  	width:90%;
+	height:910px;
+	margin-left : 6vh;
+	float:left;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:center;
+}
+div#traitementSup{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:white;
+  	width:90%;
+	height:910px;
+	margin-left : 6vh;
+	float:left;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:left;
+}
+
+div#traitementSup2{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:white;
+  	width:90%;
+	
+	margin-left : 6vh;
+	float:left;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:left;
+}
+div#ajoutSalaries3{
+	
+	display:inline-block;
+	margin-top: 1vh;
+	background:azure;
+  	width:65%;
+	height:910px;
+	margin-left : 6vh;
+	float:left;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:center;
+}
+
+div#consultSalaries{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	background:azure;
+  	width:40%;
+	height:800px;
+	margin-left : 15vh;
+	float:center;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:left;
+}
+
+
+div#consultSalaries2{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	background:azure;
+  	width:80%;
+	height:700px;
+	margin-left : 15vh;
+	float:center;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:left;
+}
+
+div#consultSalaries3{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	background:azure;
+  	width:60%;
+	height:800px;
+	margin-left : 15vh;
+	float:center;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:left;
+}
+
+div#consultSalaries4{
+	
+	display:inline-block;
+	margin-top: 2vh;
+	background:azure;
+  	width:60%;
+	height:850px;
+	margin-left : 15vh;
+	float:center;
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+	text-align:left;
+}
+
+
+div#photo{
+	display:inline-block;
+	
+	background:azure;
+  	width:15%;
+	height:150px;
+	
+	float:right;
+  	padding:16px;	
+	
+	border:solid 1px black;	
+	text-align:center;
+	margin-right: 3vh;
+}
+div#user{
+	
+	display:inline-block;
+	margin-top:12vh;
+	background:white;
+  	width:90%;
+	
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+div#contrat{
+	
+	display:inline-block;
+	margin-top:10vh;
+	background:white;
+  	width:90%;
+
+  	padding:16px;	
+	border-radius:28px;
+	border:solid 1px black;	
+}
+div#empList{
+	
+	display:inline-block;
+	
+	background-color :azure;
+	 height: 20px;
+	padding:10px;
+	border-radius:1px;
+	border:double 1px black;
+	 text-align: center;
+	font-size: 0.7em;
+}
+
+input#empList{
+	font-size: 1em;
+	width : 300px;
+}
+
+h4{
+	 border-width:1px ;
+	border-style:double;
+	border-color:whitesmoke;
+	color:white;
+        font-family: cursive;
+        font-size: 1.5em;
+}
+
+table {
+ width:100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid black;
+ }
+
+table#table {
+ width:100%; 
+	margin-top: 21vh;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid white;
+	background:white;
+
+	
+ }
+th, td {
+ border:1px solid black;
+ 
+ }
+#thh{
+	background-color:#b9c9fe;
+}
+caption {
+
+ font-weight:bold
+ }
+
+select {
+	 height: 20px;
+     width: 210px;
+}
+
+div#menu{
+	display:inline-block;
+	float:left;
+	margin-top:5vh;
+	width:40%;
+}
+div#menu a{ 
+	color:black;
+}
+#tableau {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+#tableau th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2gjh1nPI/AAAAAAAACbg/7lNsVpks2oY/s1600/gradhead.png') repeat-x;
+    border-top: 2px solid #d3ddff;
+    border-bottom: 1px solidblack;
+    color: #039;
+	
+}
+#tableau td {
+    padding: 8px;
+    border-bottom: 1px solid black;
+    color: #669;
+    border-top: 1px solid black;
+    background: #e8edff url('http://1.bp.blogspot.com/_xDpoN6UfFFY/S-J2f5yBC3I/AAAAAAAACbY/zWXYXsR-w5E/s1600/gradback.png') repeat-x;
+}
+#tableau tfoot tr td {
+    background: #e8edff;
+    font-size: 16px;
+    color: #99c;
+    text-align:center;
+}
+#tableau tbody tr:hover td {
+    background: #d0dafd url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2hsztUzI/AAAAAAAACbo/ztV1CK0RUrE/s1600/gradhover.png') repeat-x;
+    color: #339;
+}
+#tableau a:hover {
+    text-decoration:underline;
+}
+
+
+
+#tableau2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+#tableau2 th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2gjh1nPI/AAAAAAAACbg/7lNsVpks2oY/s1600/gradhead.png') repeat-x;
+    border-top: 2px solid #d3ddff;
+    border-bottom: 1px solidblack;
+    color: #039;
+}
+#tableau2 td {
+    padding: 8px;
+    border-bottom: 1px solid black;
+    color: #669;
+    border-top: 1px solid black;
+    background: #e8edff url('http://1.bp.blogspot.com/_xDpoN6UfFFY/S-J2f5yBC3I/AAAAAAAACbY/zWXYXsR-w5E/s1600/gradback.png') repeat-x;
+}
+#tableau2 tfoot tr td {
+    background: #e8edff;
+    font-size: 16px;
+    color: #99c;
+    text-align:center;
+}
+#tableau2 tbody tr:hover td {
+    background: #d0dafd url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2hsztUzI/AAAAAAAACbo/ztV1CK0RUrE/s1600/gradhover.png') repeat-x;
+    color: #339;
+}
+#tableau2 a:hover {
+    text-decoration:underline;
+}
+span {
+ border:3px solid #b9c9fe;
+ padding:3px;
+ }
+
+
+#samedi {
+background-color:#CBCBCB;
+}
+
+#amplitude {
+background-color:red;
+}
+
+#semaine {
+background-color:white;
+}
+#header {
+background-color:white;
+}
+
+#total {
+background-color:#b9c9fe;
+}
+
+#traitement {
+	
+background-color:antiquewhite;
+	width:30%;
+	text-align: left;
+	font-weight:bold;
+}
+
+searchButton {
+    background-image: url("/tp_javaee/resources/img/search_icon.png");
+}
+
+
+/*fieldset{
+		
+	padding:10px;
+	text-align:center;
+	border:solid 1px black;
+	border-radius:18px;
+	background-color: green;
+}*/

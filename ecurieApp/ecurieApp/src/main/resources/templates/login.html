@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/business-casual.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" align="center">
+    <br/><br/><br/><br/><br/>
+    <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100" style="background-color: whitesmoke">
+            <div class="card-body text-center">
+                <hr class="my-4">
+                <h4 class="text-uppercase m-0"> Connexion </h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+
+
+                    <form th:action="@{/login}" method="post" >
+                        <div th:if="${param.error}" class="alert alert-error">
+                            Invalid username and password.
+                        </div>
+                        <div th:if="${param.logout}" class="alert alert-success">
+                            You have been logged out.
+                        </div>
+                        Identifiant
+                        <br/><input type="text" id="username" name="username" required/>
+                        <br/>
+
+                        Mot de passe
+                        <br/><input type="password" id="pwd" name="password" required/>
+                        <br/> <br/>
+
+                        <a th:href="@{/register}" class="creation"  > Ou creez un compte </a>
+
+                        <br/><br/> <br/>
+                        <p>
+                            <input type="submit" class="btn btn-primary js-scroll-trigger" value="Connexion"/>
+                        </p>
+
+                    </form>
+                    </fieldset>
+                    </form>
+
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<footer class="footer text-faded text-center py-5">
+    <div class="container">
+        <p class="m-0 small">Copyright &copy; LEYE Architectures d'entreprises, ETE 2020</p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
